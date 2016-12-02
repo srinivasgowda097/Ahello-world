@@ -5,6 +5,9 @@ RUN apk --update add nginx php-fpm && \
     touch /var/log/nginx/access.log && \
     mkdir -p /tmp/nginx && \
     echo "clear_env = no" >> /etc/php/php-fpm.conf
+    
+RUN apk add --update \
+    --repository http://dl-4.alpinelinux.org/alpine/v3.3/main/ \
 ADD www /www
 ADD nginx.conf /etc/nginx/
 EXPOSE 80
