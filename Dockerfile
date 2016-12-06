@@ -1,8 +1,6 @@
 FROM alpine
 MAINTAINER support@tutum.co
-RUN apk add --update \
-    --repository http://dl-4.alpinelinux.org/alpine/v3.3/main/ \ 
-    nginx php-fpm && \
+RUN apk --update add nginx php-fpm && \
     mkdir -p /var/log/nginx && \
     touch /var/log/nginx/access.log && \
     mkdir -p /tmp/nginx && \
