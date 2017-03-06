@@ -10,4 +10,4 @@ ADD nginx.conf /etc/nginx/
 EXPOSE 80
 CMD php-fpm -d variables_order="EGPCS" && (tail -F /var/log/nginx/access.log &) && exec nginx -g "daemon off;"
 
-#test
+#t
