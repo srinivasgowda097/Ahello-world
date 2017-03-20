@@ -7,7 +7,7 @@ Sample docker image to test docker deployments
 
 
 Usage.
------
+------
 
 To create the image `tutum/hello-world`, execute the following command on the docker-hello-world folder:
 
